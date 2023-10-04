@@ -6,29 +6,49 @@
     <title>cadastro</title>
 
     <link rel="stylesheet" href="/assets/css/styleCadastrar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <form action="">
-            <label for="nome">Nome: </label>
+            
+            <label  for="nome" > <i class="fa-regular fa-user"></i>Nome: </label>
             <input type="text" name="nome" id="nome">
-
-            <label for="dataNascimento">Data de Nascimento: </label>
+ 
+            <label for="dataNascimento"> <i class="fa-regular fa-calendar"></i> Data de Nascimento: </label>
             <input type="date" name="dataNascimento" id="dataNascimento">
 
-            <label for="CPF">CPF: </label>
+            <label for="CPF"> <i class="fa-regular fa-id-card"></i> CPF: </label>
             <input type="text" name="CPF" id="">
 
-            <label for="email">Email: </label>
+            <label for="telefone"> <i class="fa-solid fa-phone"></i> Telefone: </label>
+            <input type="text" name="telefone" id="telefoneID">
+
+            <label for="CEP"> <i class="fa-solid fa-earth-americas"></i> CEP: </label>
+            <input type="text" name="CEP" id="cepID">
+
+            <label for="UF"> <i class="fa-solid fa-earth-americas"></i> UF: </label>
+            <input type="text" name="UF" id="ufID">
+
+            <label for="Pais"> <i class="fa-solid fa-earth-americas"></i> País: </label>
+            <input type="text" name="Pais" id="paisID">
+
+            <label for="Endereco"> <i class="fa-solid fa-house"></i> Endereço: </label>
+            <input type="text" name="Endereco" id="endID">
+
+            <label for="Numero"> <i class="fa-solid fa-house"></i> Numero: </label>
+            <input type="text" name="Numero" id="numID">
+
+            <label for="email"> <i class="fa-regular fa-envelope"></i> Email: </label>
             <input type="email" name="name" id="name">
 
-            <label for="ConfEmail">Confime o Email: </label>
+            <label for="ConfEmail"> <i class="fa-regular fa-envelope"></i> Confimar o Email: </label>
             <input type="email" name="ConfEmail" id="confEmail">
 
-            <label for="password">Senha: </label>
+            <label for="password"> <i class="fa-solid fa-lock"></i> Senha: </label>
             <input type="password" name="password" id="password">
             
-            <label for="ConfSenha">Confimer a Senha: </label>
+            <label for="ConfSenha"> <i class="fa-solid fa-lock"></i> Confimar a Senha: </label>
             <input type="password" name="ConfSenha" id="confSenha">
 
             <div class="botoes">
