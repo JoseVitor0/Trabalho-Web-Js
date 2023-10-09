@@ -1,94 +1,79 @@
-body{
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #c2ecfd;
 }
-footer{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #387086;
-    color: white;
-}
 
-ul{
+ul {
     display: flex;
     align-items: center;
     height: 50px;
     font-weight: bold;
     background-image: linear-gradient(to right, #1a3ffb, #7465f6);
+    overflow-x: auto; 
 }
-li{
+
+li {
     display: inline-block;
     color: white;
     padding: 10px 20px;
 }
 
-li:hover{
+li:hover {
     border-radius: 10px;
     background-image: linear-gradient(to top, #069edb, #1a3ffb);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.paises{
-    width: 1400px;
-    height: 300px;
+.paises, .hospedagens {
+    max-width: 100%;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
     grid-template-rows: 1fr;
-    gap: 50px;
-    background-color: #59cefc;
+    gap: 20px;
     align-items: center;
     justify-items: center;
+    margin-bottom: 30px;
 }
 
-.hospedagens{
-    width: 1400px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 50px;
-    background-color: #6221cc;
-    align-items: center;
-    justify-items: center;
-}
-
-div{
+div {
     height: 270px;
-    width: 270px;
+    width: 100%; 
     text-align: start;
     color: white;
 }
 
-.Paris{
-    background-color: #0023cf;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.Londres{
-    background-color: #b60101;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.Mallorca{
-    background-color: #cce700;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.Tokyo{
-    background-color: #3000cf;
+.Paris, .Londres, .Mallorca, .Tokyo, .oneonly, .claridge, .soneva, .rosewood {
+    width: 100%; 
+    max-width: 270px; 
+    height: 270px;
+    text-align: start;
+    background-color:#1a3ffb;
+    color: white;
+    margin-bottom: 0; 
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.oneonly{
-    background-color: #006015;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.claridge{
-    background-color: #b60101;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.soneva{
-    background-color: #007bfe;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-.rosewood{
-    background-color: #fb4ffb;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+footer {
+    background-color: #1a3ffb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+}
