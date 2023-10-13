@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fox viagens</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/login-responsivo.css">
+    <title>UpTravels</title>
 </head>
+
 <body>
+
     <div class="container">
-        <form action="">
-            <label for="email">Email: </label>
-            <input type="email" name="name" id="name">
-
-            <label for="password">Senha: </label>
-            <input type="password" name="password" id="password">
-
-            <div class="botoes">
-                <input class="logar" type="submit" value="Logar" formaction="carros.html">
-                <input class="registrar" type="submit" value="Registrar" formaction="registro.html">
-                
+        <div class="campos">
+            <div class="campo__titulos">
+                <p id="campo__titulo">Acesse com sua conta
+                    <span style="color: rgba(18, 18, 242);">G</span><span
+                        style="color: rgba(247, 0, 255);">o</span><span style="color: rgba(255, 170, 0);">o</span><span
+                        style="color: rgba(4, 4, 126);">g</span><span style="color: rgba(89, 89, 96);">l</span><span
+                        style="color: rgba(255, 0, 30);">e</span>
+                    !
+                </p>
             </div>
-        </form>
 
+            <div class="campo__caixaTexto">
+                <input type="email" name="" id="campo__email" placeholder="E-mail ou número de celular">
+                <input type="password" name="" id="campo__senha" placeholder="Senha">
+            </div>
+
+            <div class="campo__lembrar">
+                <input type="checkbox" name="" id="campo__lembrar">
+                <label for="campo__lembrar">Lembrar sempre do meu acesso</label>
+            </div>
+            <form action="main.html">
+                <div class="campo__botao">
+                    <button id="btnentrar">ENTRAR</button>
+                </div>
+            </form>
+
+            <div class="campo__recuperar">
+                <a href="recuperarConta.html">Esqueci minha senha</a>
+            </div>
+
+            <div class="campo__criar">
+                <a href="registro.html">Não tem conta? <span class="blue-font">Criar agora</span></a>
+            </div>
+        </div>
     </div>
-    
+
 </body>
+
 </html>
