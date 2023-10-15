@@ -5,16 +5,24 @@ body {
 .cabecalho {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 50px;
     font-weight: bold;
     background-image: linear-gradient(to right, #1a3ffb, #7465f6);
     overflow-x: auto; 
 }
-
 .cabecalho__menu {
     display: inline-block;
     color: white;
     padding: 10px 20px;
+}
+
+.cabecalho__menuEsquerda {
+    align-items: left;
+}
+
+.cabecalho__menuDireita {
+    align-items: right;
 }
 
 .cabecalho__menu:hover {
