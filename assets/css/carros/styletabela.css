@@ -3,24 +3,6 @@ body{
     background-color: #65cdf6
 }
 
-ul{
-    display: flex;
-    align-items: center;
-    height: 50px;
-    font-weight: bold;
-    background-image: linear-gradient(to bottom, #1a3ffb, #7465f6);
-}
-li{
-    display: inline-block;
-    color: white;
-    padding: 10px 10px;
-}
-
-li:hover{
-    background-image: linear-gradient(to top, #1a3ffb, #65cdf6);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-}
-
 h1{
     text-align: center;
 }
@@ -29,7 +11,7 @@ table {
     border-collapse: collapse;
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    overflow-x: auto; 
+    overflow-x: auto;
 }
 
 th{
@@ -46,5 +28,26 @@ td {
     text-align: center;
     background-color: #d3d3d3;
     white-space: nowrap; 
+}
+
+.registrar{
+    margin-top: 10px;
+    background-color: #027afa;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+
+.botoes{
+    text-align: right;
+}
+
+.registrar:hover{
+    background-color: #0056b3;
 }
 
