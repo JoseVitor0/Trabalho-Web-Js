@@ -1,7 +1,9 @@
 h1{
+    margin-top: 50px;
     text-align: center;
 }
 table {
+    margin-top: 50px;
     width: 100%;
     border-collapse: collapse;
     border-radius: 10px;
@@ -10,7 +12,7 @@ table {
 }
 
 th{
-    border: 1px solid #000000;
+    border: 0px solid #0074d2;
     padding: 8px;
     text-align: center;
     background-color: #0482ff;
@@ -18,11 +20,13 @@ th{
 }
 
 td {
-    border: 1px solid #000000;
+    border: 0px;
     padding: 8px;
     text-align: center;
-    background-color: #d3d3d3;
+    background-color: #020032;
+    color: rgb(197, 197, 197);
     white-space: nowrap; 
+    cursor: pointer;
 }
 
 .registrar{
@@ -45,4 +49,6 @@ td {
 .registrar:hover{
     background-color: #0056b3;
 }
+
+
 

@@ -1,6 +1,6 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #c2ecfd;
+    background-image: linear-gradient(to right, #c2ecfd, #6c9dff);
 }
 .cabecalho {
     display: flex;
@@ -9,7 +9,7 @@ body {
     justify-content: space-between;
     height: 50px;
     font-weight: bold;
-    background-image: linear-gradient(to right, #1a3ffb, #7465f6);
+    background-image: linear-gradient(to right, #1a3ffb, #6578f6);
     overflow-x: auto; 
 }
 .cabecalho__menu {
@@ -35,10 +35,12 @@ body {
 
 footer{
     width: 100%;
+    height: 100%;
     background-color: #1a3ffb;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-size: large;
 }
 
 .info {
@@ -67,4 +69,9 @@ footer{
     .cabecalho__menu {
         margin: 10px 0; 
     }
+}
+
+a:link{
+    color: #000000;
+    text-decoration: underline;
 }
