@@ -29,18 +29,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.serviços h3 p{
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
 .pacotes{
   background-image: url('/assets/img/pacotes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.pacotes h3 p{
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .time{
@@ -49,18 +43,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.time h3 p{
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
 .aventura{
   background-image: url('/assets/img/aventura.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-.aventura h3 p{
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 h1{
