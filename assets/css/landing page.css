@@ -1,0 +1,39 @@
+span {
+  padding: 50px;
+  color: rgb(32, 3, 88);
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(243, 242, 242, 0.9);
+}
+
+.uptravels{
+  background: url("/assets/img/up.jpg")  no-repeat center;
+  background-size: cover;
+}
+
+.serviços{
+  background-image: url("/assets/img/serviços.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.pacotes{
+  background-image: url("/assets/img/pacotes.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.time{
+  background-image: url("/assets/img/times.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.aventura{
+  background-image: url("/assets/img/aventura.jpg") no-repeat center;
+  background-size: cover;
+}
+
+h1{
+  margin: 0;
+}
+
+h2,h3{
+  margin-top: 0;
+}
