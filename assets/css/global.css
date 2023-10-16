@@ -4,6 +4,7 @@ body {
 }
 .cabecalho {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 50px;
@@ -15,6 +16,7 @@ body {
     display: inline-block;
     color: white;
     padding: 10px 20px;
+    margin: 0 10px
 }
 
 .cabecalho__menuEsquerda {
@@ -53,5 +55,16 @@ footer{
     .info {
         flex-basis: 100%; 
         margin-bottom: 20px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        height: auto;
+        flex-direction: column; 
+    }
+    
+    .cabecalho__menu {
+        margin: 10px 0; 
     }
 }
