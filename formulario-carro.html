@@ -3,43 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styleFormulario.css">
-    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/carros/styleFormulario.css">
+    <title>Formulário de Cadastro de Carro</title>
 </head>
 <body>
-<main>
-    <thead>
+    <main>
         <section>
-            <h1>Aluguel de Carros</h1>
-            <p>Confira os modelos disponiveis: </p>
+            <h1>Cadastro de Carro</h1>
+            <p>Preencha o formulário abaixo para cadastrar um novo carro:</p>
 
-            <form>
-                <div><b>Marca: </b></div>
-                <input type="radio" id="audi" name="marca" value="Audi">
-                <label for="audi">Audi</label><br>
-                <input type="radio" id="bmw" name="marca" value="BMW">
-                <label for="bmw">BMW</label><br>
-                <input type="radio" id="chevrolet" name="marca" value="Chevrolet">
-                <label for="chevrolet">Chevrolet</label><br>
-                <input type="radio" id="ford" name="marca" value="Ford">
-                <label for="ford">Ford</label><br>
-                <input type="radio" id="honda" name="marca" value="Honda">
-                <label for="honda">Honda</label><br>
-                <input type="radio" id="jeep" name="marca" value="Jeep">
-                <label for="jeep">Jeep</label><br>
-                <input type="radio" id="mercedes-Benz" name="marca" value="Mercedes-Benz">
-                <label for="mercedes-benz">Mercedes-Benz</label><br>
-                <input type="radio" id="nissan" name="marca" value="Nissan">
-                <label for="nissan">Nissan</label><br>
-                <input type="radio" id="subaru" name="marca" value="Subaru">
-                <label for="subaru">Subaru</label><br>
-                <input type="radio" id="toyota" name="marca" value="Toyota">
-                <label for="toyota">Toyota</label><br>
-                            
-        
+            <form action="carros.html">
+                <input type="text" id="marca" name="marca" placeholder="Digite a marca do carro: " required>
+                <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do carro: " required>
+                <input type="text" id="ano" name="ano" placeholder="Digite o ano do carro: " required>
+                <input type="text" id="cor" name="cor" placeholder="Digite a cor do carro: " required>
+                <input type="text" id="aluguel" name="aluguel" placeholder="Digite o aluguel que será cobrado: " required>
+                <input type="text" id="modalidade" name="modalidade" placeholder="Digite a modalidade do veiculo: " required>
+                <input class="button" type="submit" value="Registrar" formaction="carros.html">               
             </form>
         </section>
-    </thead>
-</main>
+    </main>
 </body>
 </html>
