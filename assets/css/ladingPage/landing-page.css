@@ -3,9 +3,7 @@
   text-align: center;
   text-shadow: 1px 2px 5px rgba(243, 242, 242, 0.9);
 }
-p, h2, h1, h3{
-  background-color: rgba(255, 255, 255, 0.5); ;
-}
+
 
 .timeline div {
   height: 100vh;
@@ -21,12 +19,18 @@ p, h2, h1, h3{
   background-repeat: no-repeat;
   background-position: center;
 }
+.uptravels p h1{
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .serviços{
   background-image: url('/assets/img/serviços.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.serviços h3 p{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .pacotes{
@@ -35,6 +39,9 @@ p, h2, h1, h3{
   background-repeat: no-repeat;
   background-position: center;
 }
+.pacotes h3 p{
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .time{
   background-image: url('/assets/img/times.jpg');
@@ -42,12 +49,18 @@ p, h2, h1, h3{
   background-repeat: no-repeat;
   background-position: center;
 }
+.time h3 p{
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .aventura{
   background-image: url('/assets/img/aventura.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.aventura h3 p{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 h1{
