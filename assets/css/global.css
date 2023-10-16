@@ -53,6 +53,11 @@ footer{
     color: white;
 }
 
+a:link{
+    color: #000000;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     .info {
         flex-basis: 100%; 
@@ -71,7 +76,3 @@ footer{
     }
 }
 
-a:link{
-    color: #000000;
-    text-decoration: underline;
-}

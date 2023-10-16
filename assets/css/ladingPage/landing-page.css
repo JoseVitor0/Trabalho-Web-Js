@@ -13,35 +13,35 @@
 }
 
 .uptravels{
-  background-image: url(/Trabalho-WebB-sico/assets/img/up-2.jpg);;
+  background-image: url('/assets/img/up-2.jpg');;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .serviços{
-  background-image: url(/Trabalho-WebB-sico/assets/img/serviços.jpg);
+  background-image: url('/assets/img/serviços.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .pacotes{
-  background-image: url(/Trabalho-WebB-sico/assets/img/pacotes.jpg);
+  background-image: url('/assets/img/pacotes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .time{
-  background-image: url(/Trabalho-WebB-sico/assets/img/times.jpg);
+  background-image: url('/assets/img/times.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .aventura{
-  background-image: url(/Trabalho-WebB-sico/assets/img/aventura.jpg);
+  background-image: url('/assets/img/aventura.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
