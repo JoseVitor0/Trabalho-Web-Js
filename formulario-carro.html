@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/grid-paises/stylemain.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Formulário de Cadastro de Carro</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -49,14 +50,15 @@
             <h1>Cadastro de Carro</h1>
             <p>Preencha o formulário abaixo para cadastrar um novo carro:</p>
 
-            <form action="carros.html">
+            <form action="carros.html" onsubmit="salvarDados()">
                 <input type="text" id="marca" name="marca" placeholder="Digite a marca do carro: " required>
                 <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo do carro: " required>
                 <input type="text" id="ano" name="ano" placeholder="Digite o ano do carro: " required>
                 <input type="text" id="cor" name="cor" placeholder="Digite a cor do carro: " required>
                 <input type="text" id="aluguel" name="aluguel" placeholder="Digite o aluguel que será cobrado: " required>
                 <input type="text" id="modalidade" name="modalidade" placeholder="Digite a modalidade do veiculo: " required>
-                <input class="button" type="submit" value="Registrar" formaction="carros.html">               
+                <input class="button" type="submit" value="Registrar">        
+                       
             </form>
         </section>
     </main>
@@ -82,5 +84,40 @@
             <p>Direitos Autorais &copy; UP Travels 2023. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+        const form = document.getElementById('form')
+        const marca = document.getElementById('marca')
+        const modelo = document.getElementById('modelo')
+        const ano = document.getElementById('ano')
+        const cor = document.getElementById('cor')
+        const aluguel = document.getElementById('aluguel')
+        const modalidade = document.getElementById('modalidade')
+        var dados = JSON.parse(localStorage.getItem('dados')) || [];
+        const key = new URLSearchParams(window.location.search).get('chave');
+    
+        function salvarDados(){
+            let _marca = marca.value;
+            let _modelo = modelo.value;
+            let _ano = ano.value;
+            let _cor = cor.value;
+            let _aluguel = aluguel.value;
+            let _modalidade = modalidade.value;
+    
+            if(key){
+                marca.value = dados[key].marca;
+                modelo.value = dados[key].modelo;
+                ano.value = dados[key].ano;
+                cor.value = dados[key].cor;
+                aluguel.value = dados[key].aluguel;
+                modalidade.value = dados[key].modalidade;
+            }else{
+                dados.push({marca: _marca, modelo: _modelo, ano: _ano, cor:_cor, aluguel:_aluguel, modalidade:_modalidade});
+            }
+    
+            localStorage.setItem('dados', JSON.stringify(dados));
+            window.location.href="./formulario-carro.html";
+        }
+    </script>
 </body>
+
 </html>

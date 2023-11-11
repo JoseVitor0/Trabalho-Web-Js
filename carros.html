@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/carros/styletabela.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -52,125 +55,36 @@
         </section>
         <section>
             <div class="tabela">
-            <table>
-                <thead>
-                    <colgroup>
-                        <span></span>
-                    </colgroup>
-                    <tr>
-                        <th>Marca</th>
-                        <th>Modelo</th>
-                        <th>Ano</th>
-                        <th>Cor</th>
-                        <th>Valor (por dia)</th>
-                        <th>Modalidade</th>
-                        <th>Disponibilidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>Ford</td>
-                    <td>Focus</td>
-                    <td>2022</td>
-                    <td>Prata</td>
-                    <td>$50</td>
-                    <td>Sedan</td>
-                    <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Toyota</td>
-                        <td>Corolla</td>
-                        <td>2021</td>
-                        <td>Preto</td>
-                        <td>$60</td>
-                        <td>Sedan</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Honda</td>
-                        <td>Civic</td>
-                        <td>2022</td>
-                        <td>Branco</td>
-                        <td>$55</td>
-                        <td>Sedan</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Chevrolet</td>
-                        <td>Malibu</td>
-                        <td>2021</td>
-                        <td>Vermelho</td>
-                        <td>$65</td>
-                        <td>Sedan</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Jeep</td>
-                        <td>Wrangler</td>
-                        <td>2022</td>
-                        <td>Verde</td>
-                        <td>$70</td>
-                        <td>SUV</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>BMW</td>
-                        <td>X5</td>
-                        <td>2021</td>
-                        <td>Azul</td>
-                        <td>$90</td>
-                        <td>SUV</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Mercedes-Benz</td>
-                        <td>C-Class</td>
-                        <td>2022</td>
-                        <td>Prata</td>
-                        <td>$85</td>
-                        <td>Sedan</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Audi</td>
-                        <td>A4</td>
-                        <td>2021</td>
-                        <td>Preto</td>
-                        <td>$80</td>
-                        <td>Sedan</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Subaru</td>
-                        <td>Outback</td>
-                        <td>2022</td>
-                        <td>Cinza</td>
-                        <td>$65</td>
-                        <td>SUV</td>
-                        <td>Disponível</td>
-                    </tr>
-                    <tr>
-                        <td>Nissan</td>
-                        <td>Rogue</td>
-                        <td>2021</td>
-                        <td>Prata</td>
-                        <td>$55</td>
-                        <td>SUV</td>
-                        <td>Disponível</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                </tfoot>
-            </table>
-        </div>
-        </section>
+                <table id="tab">
+                    <thead>
+                        <colgroup>
+                            <span></span>
+                        </colgroup>
+                        <tr>
+                            <th>Marca <i class="fa-solid fa-copyright"></i></th>
+                            <th>Modelo <i class="fa-solid fa-car"></i></th>
+                            <th>Ano <i class="fa-solid fa-calendar"></i></th>
+                            <th>Cor <i class="fa-solid fa-palette"></i></th>
+                            <th>Valor (por dia) <i class="fa-solid fa-dollar-sign"></i></th>
+                            <th>Modalidade <i class="fa-solid fa-car-side"></i></th>
+                            <th> - </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
 
-        <form action="formulario-carro.html">
-        <section>
-            <div class="botoes">
-                <input class="registrar" type="submit" value="Registrar carros" formaction="formulario-carro.html">               
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
             </div>
         </section>
+
+        <form action="loginADM.html">
+            <section>
+                <div class="botoes">
+                    <input class="registrar" type="submit" value="Registrar carros" formaction="loginADM.html">
+                </div>
+            </section>
         </form>
     </main>
 
@@ -181,14 +95,14 @@
             <p>Telefone: (555) 123-4567</p>
             <p>E-mail: <a href="mailto:info@uptravels.com">info@uptravels.com</a></p>
         </div>
-        
+
         <div class="info">
             <h3>Redes Sociais</h3>
             <p><a href="#">Facebook</a></p>
             <p><a href="#">Instagram</a></p>
             <p><a href="#">Twitter</a></p>
         </div>
-        
+
         <div class="info">
             <h3>Políticas e Informações Legais</h3>
             <p><a href="#">Política de Privacidade</a></p>
@@ -196,6 +110,34 @@
             <p>Direitos Autorais &copy; UP Travels 2023. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script>
+        const tabela = document.getElementById('tab');
+        var dados = JSON.parse(localStorage.getItem('dados')) || [];
+    
+        function exibirDados(){
+            dados.forEach((elemento, chave) => {
+                tabela.innerHTML += `
+                    <tr>
+                        <td>${elemento.marca}</td>
+                        <td>${elemento.modelo}</td>
+                        <td>${elemento.ano}</td>
+                        <td>${elemento.cor}</td>
+                        <td>${elemento.aluguel}</td>
+                        <td>${elemento.modalidade}</td>
+                        <td><button class="btn-alugar" onclick="alugarCarro(${chave})">Alugar Carro</button></td>
+                    </tr>
+                    `;
+            });
+        }
+        exibirDados();
+
+        function alugarCarro(chave) {
+            alert(`Carro escolhido: ${dados[chave].marca} ${dados[chave].modelo}, Diária: ${dados[chave].aluguel}`);
+            location.href = "carros.html";
+        }
+
+    </script>
 </body>
+
 
 </html>

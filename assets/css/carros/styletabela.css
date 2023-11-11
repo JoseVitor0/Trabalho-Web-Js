@@ -28,7 +28,6 @@ td {
     background-color: #020032;
     color: rgb(197, 197, 197);
     white-space: nowrap; 
-    cursor: pointer;
 }
 
 .registrar{
@@ -50,4 +49,16 @@ td {
 
 .registrar:hover{
     background-color: #0056b3;
+}
+.btn-alugar{
+    padding: 5px;
+    border: #027afa solid 3px;
+    background-color: #020032;
+    color: rgb(197, 197, 197);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-alugar:hover{
+    background-color: #027afa;
 }

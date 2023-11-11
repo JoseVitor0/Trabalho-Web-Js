@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ADM</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/Login/login-responsivo.css">
+    <link rel="stylesheet" href="assets/css/Login/loginADM.css">
+</head>
+<body>
+    <div class="container">
+        <form id="login">
+            <div id="linha">
+                <label for="user">Usuário: </label>
+                <input type="text" name="user" id="user">
+            </div>
+            <br>
+            <div id="linha">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <input class="btn-logar" type="submit" value="Logar" onclick="login(); return false">
+        </form>
+    </div>
+</body>
+<script>
+
+    var user = "adm"
+    var senha = "321"
+
+    function login(){
+        var user_input = document.getElementById('user').value;
+        var senha_input = document.getElementById('senha').value;
+
+        if(user_input == user && senha == senha_input){
+            alert("Login Realizado com sucesso!");
+            location.href = "formulario-carro.html"
+        }
+        else{
+            alert("Usuário ou senha incorreto(s)");
+        }
+    }
+    
+
+</script>
+</html>
